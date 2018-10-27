@@ -10,7 +10,8 @@
 
 .form-cell__error {
   margin-top: 7.5px;
-  font-size: 14px;
   color: #6c261e;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 20px;
 }
