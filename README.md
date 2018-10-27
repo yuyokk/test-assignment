@@ -1,4 +1,4 @@
-# VONQ Test Assignment
+# Test Assignment
 
 Project is bootstrapped with [create-react-app](https://facebook.github.io/create-react-app/)
 
