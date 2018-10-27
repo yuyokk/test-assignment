@@ -85,10 +85,7 @@ describe('<InputWithValidation />', () => {
           target: { value: '5' }
         };
         const wrapper = shallow(
-          <Input
-            validationRegExp={REG_DIGITS_WITH_PLUS}
-            onChange={onChangeMock}
-          />
+          <Input validationRegExp={REG_DIGITS_WITH_PLUS} onChange={onChangeMock} />
         );
 
         wrapper.find('input').simulate('change', event);
@@ -101,10 +98,7 @@ describe('<InputWithValidation />', () => {
           target: { value: '5+' }
         };
         const wrapper = shallow(
-          <Input
-            validationRegExp={REG_DIGITS_WITH_PLUS}
-            onChange={onChangeMock}
-          />
+          <Input validationRegExp={REG_DIGITS_WITH_PLUS} onChange={onChangeMock} />
         );
 
         wrapper.find('input').simulate('change', event);
@@ -117,10 +111,7 @@ describe('<InputWithValidation />', () => {
           target: { value: '5+test' }
         };
         const wrapper = shallow(
-          <Input
-            validationRegExp={REG_DIGITS_WITH_PLUS}
-            onChange={onChangeMock}
-          />
+          <Input validationRegExp={REG_DIGITS_WITH_PLUS} onChange={onChangeMock} />
         );
 
         wrapper.find('input').simulate('change', event);
@@ -133,10 +124,7 @@ describe('<InputWithValidation />', () => {
           target: { value: 'isnotacceptable' }
         };
         const wrapper = shallow(
-          <Input
-            validationRegExp={REG_DIGITS_WITH_PLUS}
-            onChange={onChangeMock}
-          />
+          <Input validationRegExp={REG_DIGITS_WITH_PLUS} onChange={onChangeMock} />
         );
 
         wrapper.find('input').simulate('change', event);
