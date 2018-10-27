@@ -13,8 +13,9 @@ Deployed to Netlify <https://vonq-test-assignment.netlify.com>
 ### What to improve?
 
 - Make inputs validation more strict:
+  - accept values for "A minimum No. years of experience" in range from 1 to 99
   - accept values for "No. of working hours" in range from 1 to 168
-  - min hours has be to less than max hours value
+  - Min working hours has be to less than Max woking hours value
 - Apply red border on checkboxes when user submits the form without selecting "Level of education"
 - Increase test coverage
 - Use some CSS-in-JS (e.g. [styled-components](https://www.styled-components.com/)) library for common components (Input, Button, Icon etc)
