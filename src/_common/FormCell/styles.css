@@ -1,0 +1,16 @@
+.form-cell {
+}
+
+.form-cell--has-error .form-control {
+  border-color: #d8656a;
+}
+
+.form-cell--has-error .form-checkbox {
+}
+
+.form-cell__error {
+  margin-top: 7.5px;
+  font-size: 14px;
+  color: #6c261e;
+  line-height: 20px;
+}

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Summary /> renders correctly 1`] = `
+<section
+  className="summary panel"
+>
+  <header
+    className="summary__header"
+  >
+    <h1>
+      <span
+        className="icon icon--success header-icon margin-right--md"
+      />
+       Job criteria
+    </h1>
+    <button
+      className="summary__edit-btn btn btn-primary btn-secondary"
+      onClick={[Function]}
+    >
+      Edit
+    </button>
+  </header>
+  <p>
+    <span
+      className="text-dimmed"
+    >
+      A minimum No. years of experience:
+    </span>
+     
+    1
+  </p>
+  <p>
+    <span
+      className="text-dimmed"
+    >
+      No. of working hours (per week):
+    </span>
+     
+    32
+    -
+    40
+     hours
+  </p>
+  <p>
+    <strong>
+      Level of education
+    </strong>
+  </p>
+  <div
+    className="summary__education-wrapper"
+  >
+    <span
+      className="badge"
+    >
+      level 1
+    </span>
+    <span
+      className="badge"
+    >
+      level 2
+    </span>
+  </div>
+</section>
+`;

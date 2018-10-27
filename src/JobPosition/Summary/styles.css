@@ -1,0 +1,29 @@
+.summary {
+}
+@media (min-width: 768px) {
+  .summary {
+    width: 570px;
+  }
+}
+
+.summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.summary__header h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.summary__education-wrapper .tag {
+  margin-right: 7.5px;
+  margin-bottom: 7.5px;
+}
+
+.summary__education-wrapper .tag:last-child {
+  margin-bottom: 0;
+}

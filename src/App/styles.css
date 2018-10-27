@@ -1,0 +1,19 @@
+.app {
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 575.98px) {
+  .app {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 576px) {
+  .app {
+    /* center children vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
