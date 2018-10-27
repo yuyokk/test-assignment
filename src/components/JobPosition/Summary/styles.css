@@ -19,11 +19,11 @@
   margin-bottom: 0;
 }
 
-.summary__education-wrapper .tag {
+.summary__education-wrapper .badge {
   margin-right: 7.5px;
   margin-bottom: 7.5px;
 }
 
-.summary__education-wrapper .tag:last-child {
+.summary__education-wrapper .badge:last-child {
   margin-bottom: 0;
 }
