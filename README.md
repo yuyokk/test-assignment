@@ -6,12 +6,15 @@ Deployed to Netlify <https://vonq-test-assignment.netlify.com>
 
 ## Dev notes
 
+- No Router/Redux used
 - Used plain CSS (BEM methodology) without any preprocessors or libraries
+- Used [lazy](https://github.com/yuyokk/test-assignment/blob/master/src/components/JobPosition/index.js#L3-L4) to code-split Edit/Sumary views
 
-## What can be improved?
+### What to improve?
 
 - Make inputs validation more strict:
   - accept values for "No. of working hours" in range from 1 to 168
   - min hours has be to less than max hours value
 - Apply red border on checkboxes when user submits the form without selecting "Level of education"
+- Increase test coverage
 - Use some CSS-in-JS (e.g. [styled-components](https://www.styled-components.com/)) library for common components (Input, Button, Icon etc)
