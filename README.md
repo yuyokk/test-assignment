@@ -19,3 +19,11 @@ Deployed to Netlify <https://vonq-test-assignment.netlify.com>
 - Apply red border on checkboxes when user submits the form without selecting "Level of education"
 - Increase test coverage
 - Use some CSS-in-JS (e.g. [styled-components](https://www.styled-components.com/)) library for common components (Input, Button, Icon etc)
+
+## Running project locally
+
+Inside the project folder, you can run these built-in commands:
+
+- `npm start` - runs the app in development mode on <http://localhost:3000>
+- `npm test` - runs test watcher in an interactive mode
+- `npm run build` - builds the app for production to the `build` folder
