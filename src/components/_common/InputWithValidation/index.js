@@ -40,7 +40,7 @@ InputWithValidation.propTypes = {
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   validationRegExp: PropTypes.instanceOf(RegExp),
-  value: PropTypes.string,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func
 };
 

@@ -114,7 +114,7 @@ class EditView extends React.Component {
           </div>
         </header>
 
-        <form className="form" onSubmit={this.handleSubmit} noValidate>
+        <form className="edit-view__form" onSubmit={this.handleSubmit} noValidate>
           <div className="form__group">
             <FormCell hasError={errors.yearsExperience}>
               <label className="label" htmlFor="years-experience">
@@ -150,8 +150,8 @@ class EditView extends React.Component {
                       className="form-checkbox"
                       type="checkbox"
                       checked={isChecked}
-                      onChange={() => {
-                        this.handleEduLevelnChange(`eduLevels.${level}`, !isChecked);
+                      onChange={e => {
+                        this.handleEduLevelnChange(`eduLevels.${level}`, e.target.checked);
                       }}
                     />
                     <label className="form-check__label" htmlFor={id}>
@@ -204,7 +204,9 @@ class EditView extends React.Component {
           </div>
 
           <div className="text-right">
-            <Button type="submit">{formNeedsFixes ? 'Save and continue' : 'Save'}</Button>
+            <Button className="edit-view__btn-save" type="submit">
+              {formNeedsFixes ? 'Save and continue' : 'Save'}
+            </Button>
           </div>
         </form>
       </Panel>
