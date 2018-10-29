@@ -1,7 +1,7 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import set from 'lodash.set';
-const EditView = lazy(() => import('./EditView'));
-const Summary = lazy(() => import('./Summary'));
+import EditView from './EditView';
+import Summary from './Summary';
 
 export default class JobPosition extends React.Component {
   state = {
@@ -27,28 +27,24 @@ export default class JobPosition extends React.Component {
     return (
       <React.Fragment>
         {isEditMode && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <EditView
-              yearsExperience={positionData.yearsExperience}
-              eduLevels={positionData.eduLevels}
-              minHours={positionData.minHours}
-              maxHours={positionData.maxHours}
-              onChange={this.handleChange}
-              onSave={() => this.setState({ isEditMode: false })}
-            />
-          </Suspense>
+          <EditView
+            yearsExperience={positionData.yearsExperience}
+            eduLevels={positionData.eduLevels}
+            minHours={positionData.minHours}
+            maxHours={positionData.maxHours}
+            onChange={this.handleChange}
+            onSave={() => this.setState({ isEditMode: false })}
+          />
         )}
 
         {!isEditMode && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <Summary
-              yearsExperience={positionData.yearsExperience}
-              eduLevels={positionData.eduLevels}
-              minHours={positionData.minHours}
-              maxHours={positionData.maxHours}
-              onEdit={() => this.setState({ isEditMode: true })}
-            />
-          </Suspense>
+          <Summary
+            yearsExperience={positionData.yearsExperience}
+            eduLevels={positionData.eduLevels}
+            minHours={positionData.minHours}
+            maxHours={positionData.maxHours}
+            onEdit={() => this.setState({ isEditMode: true })}
+          />
         )}
       </React.Fragment>
     );

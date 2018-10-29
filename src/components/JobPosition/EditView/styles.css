@@ -58,3 +58,7 @@
 .form-control:invalid {
   box-shadow: none;
 }
+
+.form-control::-ms-clear {
+  display: none;
+}
