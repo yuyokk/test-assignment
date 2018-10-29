@@ -8,7 +8,7 @@ Deployed to Netlify <https://vonq-test-assignment.netlify.com>
 
 - No Router/Redux used
 - Used plain CSS (BEM methodology) without any preprocessors or libraries
-- Used [lazy](https://github.com/yuyokk/test-assignment/blob/master/src/components/JobPosition/index.js#L3-L4) to code-split Edit/Sumary views
+- ~~Used [lazy](https://github.com/yuyokk/test-assignment/blob/59c3ba4595caab73048c029771f6d7f1beb53b4b/src/components/JobPosition/index.js#L3-L4) to code-split Edit/Sumary views~~ Not supported on IE11 :|
 
 ### What to improve?
 
