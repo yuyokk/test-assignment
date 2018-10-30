@@ -55,7 +55,6 @@ class EditView extends React.Component {
     event.preventDefault();
 
     if (this.validateForm()) {
-      this.setState({ formNeedsFixes: false });
       this.props.onSave();
     } else {
       this.setState({ formNeedsFixes: true });
